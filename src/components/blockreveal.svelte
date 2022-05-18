@@ -1,11 +1,12 @@
 <script>
   export let clipPath = true
+  export let stagger = "left"
 </script>
 
 <h1>
-  <span class:clip="{clipPath}">Let's</span>
-  <span class:clip="{clipPath}">Build</span>
-  <span class:clip="{clipPath}">Stuuuuff!</span>
+  <span class:clip="{clipPath}" class={stagger}>Let's</span>
+  <span class:clip="{clipPath}" class={stagger}>Build</span>
+  <span class:clip="{clipPath}" class={stagger}>Stuuuuff!</span>
 </h1>
 
 <style global>
@@ -39,11 +40,18 @@ h1 span {
   animation-delay: calc((0.5 + var(--index)) * (var(--speed) / 3));
   animation-fill-mode: both;
   animation-timing-function: steps(1), ease-out;
+  --direction: 0
+}
+h1 span.left {
+  --direction: 1ch
+}
+h1 span.right {
+  --direction: -1ch
 }
 
 @keyframes shimmy {
   0% {
-    transform: translateX(-1ch);
+    transform: translateX(var(--direction));
   }
 }
 

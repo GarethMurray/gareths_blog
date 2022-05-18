@@ -8,8 +8,19 @@ excerpt: An incredibly impressive block reveal
   import Blockreveal from '$components/blockreveal.svelte'
   let shouldShow = false
   const toggle = () => { 
-    console.log(shouldShow)
     shouldShow = !shouldShow}
+  let clip = true
+  const toggleClip = () => {
+    clip = !clip}
+  let direction = "left"
+  const toggleDir = () => { 
+    if (direction === "left") {
+      direction = "none"}
+    else if (direction === "none") {
+      direction = "right"}
+    else if (direction === "right") {
+      direction = "left"}
+  }
 </script>
 
 ### I stole this snippet from the fantastic <a href="https://github.com/jh3y">Jhey Tompkins</a>
@@ -72,6 +83,7 @@ h1 span {
 
 
 /* Shift text 1 character to the left */
+/* This causes a stagger effect which makes a huge impact */
 @keyframes shimmy {
   0% {
     transform: translateX(-1ch);
@@ -88,8 +100,7 @@ h1 span {
   }
 }
 
-/* The block should overlap 20% on the x axis */
-
+/* Inset causes the block to overlap 20% on the x axis */
 h1 span:after {
   content: "";
   position: absolute;
@@ -131,14 +142,27 @@ h1 span:nth-of-type(3) {
 ```
 I find it especially interesting to see what this looks like without the clipping mask
 <div class="flex flex-col h-80 flex-shrink-0 items-start justify-between">
+<div>
   <button on:click={toggle} class="px-4 py-2 shadow-md bg-dark-50 rounded min-w-[8rem]">
     {#if shouldShow}Hide
     {:else}Show me
     {/if}
   </button>
+  <button on:click={toggleClip} class="px-4 py-2 shadow-md bg-dark-50 rounded min-w-[8rem]">
+    {#if clip}Disable Clip Mask
+    {:else}Activate Clip Mask
+    {/if}
+  </button>
+  <button on:click={toggleDir} class="px-4 py-2 shadow-md bg-dark-50 rounded min-w-[8rem]">
+    {#if direction === "left"}Left
+    {:else if direction === "none"}None
+    {:else if direction === "right"}Right
+    {/if}
+  </button>
+</div>
 
   {#if shouldShow}
-    <Blockreveal clipPath="{false}" />
+    <Blockreveal clipPath="{clip}" stagger="{direction}" />
   {/if}
 </div>
 
