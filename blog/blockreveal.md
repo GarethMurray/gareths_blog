@@ -19,11 +19,11 @@ I've seen a few block reveals in CSS, but none of them have impressed me like th
 What exactly am I talking about?
 
 <div class="flex flex-col h-80 flex-shrink-0 items-start justify-between">
-<button on:click={toggle} class="px-4 py-2 shadow-md bg-dark-50 rounded min-w-[8rem]">Show me</button>
+  <button on:click={toggle} class="px-4 py-2 shadow-md bg-dark-50 rounded min-w-[8rem]">Show me</button>
 
-{#if shouldShow}
-  <Blockreveal />
-{/if}
+  {#if shouldShow}
+    <Blockreveal />
+  {/if}
 </div>
 
 
