@@ -1,10 +1,15 @@
+<script>
+  export let clipPath = true
+</script>
+
 <h1>
-  <span>Let's</span>
-  <span>Build</span>
-  <span>Stuuuuff!</span>
+  <span class:clip="{clipPath}">Let's</span>
+  <span class:clip="{clipPath}">Build</span>
+  <span class:clip="{clipPath}">Stuuuuff!</span>
 </h1>
 
 <style global>
+
 h1 {
   margin: 0;
   font-size: clamp(2rem, 1rem + 10vmin, 10rem);
@@ -21,11 +26,14 @@ h1 {
   --speed: 0.65s;
 }
 
+.clip {
+  clip-path: inset(-20% 0);
+}
+
 h1 span {
   --color: var(--primary);
   color: var(--color);
   position: relative;
-  clip-path: inset(-20% 0);
   animation-name: text-reveal, shimmy;
   animation-duration: var(--speed);
   animation-delay: calc((0.5 + var(--index)) * (var(--speed) / 3));

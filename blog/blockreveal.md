@@ -39,6 +39,7 @@ What exactly am I talking about?
 </h1>
 ```
 ```css
+/* Here the lineheight controls the size of the block */
 h1 {
   margin: 0;
   font-size: clamp(2rem, 1rem + 10vmin, 10rem);
@@ -55,6 +56,8 @@ h1 {
   --speed: 0.65s;
 }
 
+/* The clip path is the most important thing here */
+/* Is hides anything that is more than 20% wider than the element */
 h1 span {
   --color: var(--primary);
   color: var(--color);
@@ -67,12 +70,15 @@ h1 span {
   animation-timing-function: steps(1), ease-out;
 }
 
+
+/* Shift text 1 character to the left */
 @keyframes shimmy {
   0% {
     transform: translateX(-1ch);
   }
 }
 
+/* Start the text off as hidden and then reveal it */
 @keyframes text-reveal {
   0% {
     color: transparent;
@@ -81,6 +87,8 @@ h1 span {
     color: var(--color);
   }
 }
+
+/* The block should overlap 20% on the x axis */
 
 h1 span:after {
   content: "";
@@ -93,6 +101,9 @@ h1 span:after {
   animation-fill-mode: both;
 }
 
+/* initial position of the block starts ahead of the text,  */
+/* drags slightly (10% of duration) */
+/* and moves over text */
 @keyframes block-reveal {
   0% {
     transform: translateX(-110%);
@@ -118,4 +129,16 @@ h1 span:nth-of-type(3) {
   --index: 2;
 }
 ```
+I find it especially interesting to see what this looks like without the clipping mask
+<div class="flex flex-col h-80 flex-shrink-0 items-start justify-between">
+  <button on:click={toggle} class="px-4 py-2 shadow-md bg-dark-50 rounded min-w-[8rem]">
+    {#if shouldShow}Hide
+    {:else}Show me
+    {/if}
+  </button>
+
+  {#if shouldShow}
+    <Blockreveal clipPath="{false}" />
+  {/if}
+</div>
 
