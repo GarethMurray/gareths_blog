@@ -5,18 +5,6 @@
 </h1>
 
 <style global>
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  display: grid;
-  place-items: center;
-  min-height: 100vh;
-  overflow: hidden;
-}
-
 h1 {
   margin: 0;
   font-size: clamp(2rem, 1rem + 10vmin, 10rem);

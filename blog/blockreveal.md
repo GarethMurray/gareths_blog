@@ -6,16 +6,20 @@ excerpt: An incredibly impressive block reveal
 
 <script>
   import Blockreveal from '$components/blockreveal.svelte'
-  let shouldShow = true
+  let shouldShow = false
   const toggle = () => { 
     console.log(shouldShow)
     shouldShow = !shouldShow}
 </script>
 
-### I stole this snippet from JHey, who is part of Google's Devrel team
+### I stole this snippet from the fantastic <a href="https://github.com/jh3y">Jhey Tompkins</a>
+
+I've seen a few block reveals in CSS, but none of them have impressed me like this one. There's a level of polish in this that really just brings happiness, so I thought I'd both store it for future use and play with it a little to see exactly what makes me like it so much. After fiddling a little, I believe it's the easing - it hits <em>just</em> right
+
+What exactly am I talking about?
 
 <div class="flex flex-col h-80 flex-shrink-0 items-start justify-between">
-<button on:click={toggle} class="px-4 py-2 shadow-md bg-dark-50 rounded min-w-[8rem]">Show</button>
+<button on:click={toggle} class="px-4 py-2 shadow-md bg-dark-50 rounded min-w-[8rem]">Show me</button>
 
 {#if shouldShow}
   <Blockreveal />
@@ -29,21 +33,8 @@ excerpt: An incredibly impressive block reveal
   <span>Build</span>
   <span>Stuuuuff!</span>
 </h1>
-
 ```
 ```css
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  display: grid;
-  place-items: center;
-  min-height: 100vh;
-  overflow: hidden;
-}
-
 h1 {
   margin: 0;
   font-size: clamp(2rem, 1rem + 10vmin, 10rem);
