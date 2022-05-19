@@ -43,10 +43,10 @@ h1 span {
   --direction: 0
 }
 h1 span.left {
-  --direction: 1ch
+  --direction: -1ch
 }
 h1 span.right {
-  --direction: -1ch
+  --direction: 1ch
 }
 
 @keyframes shimmy {
