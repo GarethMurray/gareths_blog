@@ -93,6 +93,7 @@ After more consideration, this guard clause is pointless because ```
 identifyingField
 ``` *has* to exist as a key of ```
 elementToRemove```
+and as such, the array can be of any type.
 
 So my final  snippet has ended up as 
 
@@ -106,16 +107,24 @@ export const removeFromArr = <T>(
 
 
 export const removeObjectWithKeyFromArr = <T, K extends keyof T>(
-  arrayToRemoveElementFrom: T[],
+  arrayToRemoveElementFrom: any[],
   elementToRemove: T,
   identifyingField: K
 ): T[] => 
 	arrayToRemoveElementFrom.filter((element) =>  
 		element[identifyingField] !== elementToRemove[identifyingField])
+
+
+const person = {name: "Mike", age: 32}
+const info = {foods: ["pizza", "sushi", "burger"], weight: "Over 9000"}
+const myArr = [person, person, info]
+
+removeObjectWithKeyFromArr(myArr, person, "id") // error
+removeObjectWithKeyFromArr(myArr, person, "name") // valid
+removeObjectWithKeyFromArr(myArr, person, "age") // valid
+removeObjectWithKeyFromArr(myArr, person, "foods") // error
+removeObjectWithKeyFromArr(myArr, info, "foods") // valid
 ```
-
-
-
 
 
 One other consideration is removing a key:value pair when the value is undefined. While I don't think this is an issue, while running through this, I also learned about the, ```noUncheckedIndexedAccess``` flag, which allows objects, or arrays to describe *values* as potentially undefined.
@@ -157,6 +166,7 @@ But needing to add an undefined onto each case where you have a similar use case
 		"noUncheckedIndexedAccess": false
 	},
 }
+
 ```
 Now the TS compiler will help us confirm or check if values are defined, without requiring an undefined union
 
