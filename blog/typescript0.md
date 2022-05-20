@@ -46,9 +46,7 @@ There is nothing wrong with this of course. But it's possibly more verbose than 
 
 Additionally, I feel as though this function is trying to solve two different problems. Removing an element from an array, and removing an object with a specifc key:value pair from an array. So firstly, I would prefer these to be two different functions.
 
-This way, the identifying field no longer needs to be optional. 
-
-As we are explicitly defining the array argument as an array, and not undefined, we can remove the guard clause, similarly for the optional identifying field
+This way, the identifying field no longer needs to be optional. As we are explicitly defining the array ```arrayToRemoveElementFrom``` as an array, and not undefined, we can also remove the guard clause
 
 ```ts
 export const removeFromArr = <T>(
@@ -74,29 +72,7 @@ export const removeFromArr = <T, K extends keyof T>(
 };
 ```
 
-This is looking a lot cleaner, however I still think there is room for improvement. If ```elementToRemove[idendifyingField] === 0``` this function will do nothing, so we can now improve the guard clause.
-
-```ts
-export const removeObjectWithKeyFromArr = <T, K extends keyof T>(
-  arrayToRemoveElementFrom: T[],
-  elementToRemove: T,
-  identifyingField: K
-): T[] => {
-    // We instead ckeck to see if the key exists as a guard
-    if (identifyingField in elementToRemove){
-	    return arrayToRemoveElementFrom.filter(
-	      (element) => element[identifyingField] !== elementToRemove[identifyingField]
-	    )
-  	} else {
-    // And then handle the error in a meaningful way
-    console.error(`Key ${identifyingField} does not exist on object: ",
-      elementToRemove`)
-    return arrayToRemoveElementFrom;
-	}
-}
-```
-
-After more consideration, this guard clause is pointless because ```identifyingField``` *has* to exist as a key of ```elementToRemove``` and as such, the array can be of any type. Additionally, interacting with this function can be made much simpler by specifying a key to check and a value to find in that key. Now instead of calling this function in the pattern of
+This is looking a lot cleaner, however I still think there is room for improvement. If ```elementToRemove[idendifyingField] === 0``` this function will do nothing. This guard clause is pointless because ```identifyingField``` *has* to exist as a key of ```elementToRemove``` and as such, the array can be of any type. Additionally, interacting with this function can be made much simpler by specifying a key to check and a value to find in that key. Now instead of calling this function in the pattern of
 
 ```ts
 removeFromArr(arrayToRemoveElementFrom, elementToRemove, identifyingField)
@@ -131,7 +107,9 @@ removeObjectFromArrByKey(myArr, "name", "mike") // valid
 removeObjectFromArrByKey(myArr, "person", "age") // error, the key is invalid
 removeObjectFromArrByKey(myArr, "age", "55") // error, the value is of the wrong type
 ```
-I think this is a good example of how to use generics to both enforce better type safety, but also make code more readable and maintainable. Most importantly, how slippery a slope it can be to write overly complex functions. I am a huge advocate for simplicity and I think this snippet is testament to benefit of trying to make code as easy to understand as possible.
+While the result seems a little contrived, this is a real-world example, that I found in the wild and there is no harm in having utility functions to make our lives easier.
+
+I think this is a good example of how to use generics to both enforce better type safety, but also make code more readable and maintainable. Most importantly, how slippery a slope it can be to write overly complex functions when something simple will do the same job. I am a huge advocate for simplicity and I think this snippet is testament to benefit of trying to make code as easy to understand as possible.
 
 ### No Unchecked Indexed Access
 
