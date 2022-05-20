@@ -4,10 +4,14 @@ date: 2022-05-20
 excerpt: More than the basics
 ---
 
-## I really like TS (when I know what I'm doingww)
+## I really like TS (when I know what I'm doing)
 My pet peeve lately are tutorials that teach code which is not typesafe. I don't mind tutorials written in JS, in fact I think it's often a better option to avoid any cognitive overhead when learning a new topic.
 
 **But**, I've seen *so* many tutorial where unsafe actions are leveraged.
+
+I just needed to get that off of my chest.
+
+### Code Review
 
 Recently I was shown this snippet of code
 
@@ -40,7 +44,11 @@ export const removeFromArr = <T, K extends keyof T>(
 
 There is nothing wrong with this of course. But it's possibly more verbose than it could be 
 
-Additionally, I feel as though this function is trying to solve two different purposes. Removing an element from an array, and removing an object with a specifc key:value pair from an array. This way the identifying field is no longer optional. As we are explicitly defining the array argument as an array, and not undefined, we can remove the guard clause, similarly for the optional identifying field
+Additionally, I feel as though this function is trying to solve two different problems. Removing an element from an array, and removing an object with a specifc key:value pair from an array. So firstly, I would prefer these to be two different functions.
+
+This way, the identifying field no longer needs to be optional. 
+
+As we are explicitly defining the array argument as an array, and not undefined, we can remove the guard clause, similarly for the optional identifying field
 
 ```ts
 export const removeFromArr = <T>(
@@ -74,58 +82,58 @@ export const removeObjectWithKeyFromArr = <T, K extends keyof T>(
   elementToRemove: T,
   identifyingField: K
 ): T[] => {
-
     // We instead ckeck to see if the key exists as a guard
     if (identifyingField in elementToRemove){
 	    return arrayToRemoveElementFrom.filter(
 	      (element) => element[identifyingField] !== elementToRemove[identifyingField]
 	    )
-	} else {
-	// And then handle the error in a meaningful way
-	console.error(`Key ${identifyingField} does not exist on object: ",
-		elementToRemove)
-	return arrayToRemoveElementFrom;
-	} 
+  	} else {
+    // And then handle the error in a meaningful way
+    console.error(`Key ${identifyingField} does not exist on object: ",
+      elementToRemove`)
+    return arrayToRemoveElementFrom;
+	}
 }
 ```
 
-After more consideration, this guard clause is pointless because ```
-identifyingField
-``` *has* to exist as a key of ```
-elementToRemove```
-and as such, the array can be of any type.
+After more consideration, this guard clause is pointless because ```identifyingField``` *has* to exist as a key of ```elementToRemove``` and as such, the array can be of any type. Additionally, interacting with this function can be made much simpler by specifying a key to check and a value to find in that key. Now instead of calling this function in the pattern of
+
+```ts
+removeFromArr(arrayToRemoveElementFrom, elementToRemove, identifyingField)
+```
+We can call it as
+```ts
+removeObjectFromArrByKey(array, key, value)
+```
 
 So my final  snippet has ended up as 
 
 ```ts
 export const removeFromArr = <T>(
   arrayToRemoveElementFrom: T[],
-  elementToRemove: T,
-): T[] => 
-	arrayToRemoveElementFrom.filter((element) => 
-		element !== elementToRemove)
+  elementToRemove: T
+): T[] =>
+  arrayToRemoveElementFrom.filter((element) => element !== elementToRemove)
 
+export const removeObjectFromArrByKey = <T, K extends keyof T>(
+  arrayToRemoveElementFrom: T[], // an array of generic types
+  key: K, // The key of the element to remove
+  value: T[K] // A value from the one item in the array 
+): T[] => arrayToRemoveElementFrom.filter((e) => e[key] !== value)
 
-export const removeObjectWithKeyFromArr = <T, K extends keyof T>(
-  arrayToRemoveElementFrom: any[],
-  elementToRemove: T,
-  identifyingField: K
-): T[] => 
-	arrayToRemoveElementFrom.filter((element) =>  
-		element[identifyingField] !== elementToRemove[identifyingField])
+const person1 = { name: "Mike", age: 32 }
+const person2 = { name: "Steve", age: 25 }
+const person3 = { name: "James", age: 35 }
+const myArr = [person1, person2, person3]
 
-
-const person = {name: "Mike", age: 32}
-const info = {foods: ["pizza", "sushi", "burger"], weight: "Over 9000"}
-const myArr = [person, person, info]
-
-removeObjectWithKeyFromArr(myArr, person, "id") // error
-removeObjectWithKeyFromArr(myArr, person, "name") // valid
-removeObjectWithKeyFromArr(myArr, person, "age") // valid
-removeObjectWithKeyFromArr(myArr, person, "foods") // error
-removeObjectWithKeyFromArr(myArr, info, "foods") // valid
+removeObjectFromArrByKey(myArr, "age", 32) // valid
+removeObjectFromArrByKey(myArr, "name", "mike") // valid
+removeObjectFromArrByKey(myArr, "person", "age") // error, the key is invalid
+removeObjectFromArrByKey(myArr, "age", "55") // error, the value is of the wrong type
 ```
+I think this is a good example of how to use generics to both enforce better type safety, but also make code more readable and maintainable. Most importantly, how slippery a slope it can be to write overly complex functions. I am a huge advocate for simplicity and I think this snippet is testament to benefit of trying to make code as easy to understand as possible.
 
+### No Unchecked Indexed Access
 
 One other consideration is removing a key:value pair when the value is undefined. While I don't think this is an issue, while running through this, I also learned about the, ```noUncheckedIndexedAccess``` flag, which allows objects, or arrays to describe *values* as potentially undefined.
 
