@@ -104,8 +104,8 @@ const myArr = [person1, person2, person3]
 
 removeObjectFromArrByKey(myArr, "age", 32) // valid
 removeObjectFromArrByKey(myArr, "name", "mike") // valid
-removeObjectFromArrByKey(myArr, "person", "age") // error, the key is invalid
-removeObjectFromArrByKey(myArr, "age", "55") // error, the value is of the wrong type
+removeObjectFromArrByKey(myArr, "title", "Mr") // error, the key is invalid
+removeObjectFromArrByKey(myArr, "age", "thirty") // error, the value is of the wrong type
 ```
 While the result seems a little contrived, this is a real-world example, that I found in the wild and there is no harm in having utility functions to make our lives easier.
 
