@@ -46,7 +46,7 @@ There is nothing wrong with this of course. But it's possibly more verbose than 
 
 Additionally, I feel as though this function is trying to solve two different problems. Removing an element from an array, and removing an object with a specifc key:value pair from an array. So firstly, I would prefer these to be two different functions.
 
-This way, the identifying field no longer needs to be optional. As we are explicitly defining the array ```arrayToRemoveElementFrom``` as an array, and not undefined, we can also remove the guard clause
+This way, the identifying field no longer needs to be optional. As we are explicitly defining the array ``arrayToRemoveElementFrom`` as an array, and not undefined, we can also remove the guard clause
 
 ```ts
 export const removeFromArr = <T>(
@@ -72,7 +72,7 @@ export const removeFromArr = <T, K extends keyof T>(
 };
 ```
 
-This is looking a lot cleaner, however I still think there is room for improvement. If ```elementToRemove[idendifyingField] === 0``` this function will do nothing. This guard clause is pointless because ```identifyingField``` *has* to exist as a key of ```elementToRemove``` and as such, the array can be of any type. Additionally, interacting with this function can be made much simpler by specifying a key to check and a value to find in that key. Now instead of calling this function in the pattern of
+This is looking a lot cleaner, however I still think there is room for improvement. If `elementToRemove[idendifyingField] === 0` this function will do nothing. This guard clause is pointless because ``identifyingField`` *has* to exist as a key of ``elementToRemove`` and as such, the array can be of any type. Additionally, interacting with this function can be made much simpler by specifying a key to check and a value to find in that key. Now instead of calling this function in the pattern of
 
 ```ts
 removeFromArr(arrayToRemoveElementFrom, elementToRemove, identifyingField)
@@ -114,7 +114,7 @@ I think this is a good example of how to use generics to both enforce better typ
 
 ### No Unchecked Indexed Access
 
-One other consideration is removing a key:value pair when the value is undefined. While I don't think this is an issue, while running through this, I also learned about the, ```noUncheckedIndexedAccess``` flag, which allows objects, or arrays to describe *values* as potentially undefined.
+One other consideration is removing a key:value pair when the value is undefined. While I don't think this is an issue, while running through this, I also learned about the, ``noUncheckedIndexedAccess`` flag, which allows objects, or arrays to describe *values* as potentially undefined.
 
 This does something pretty fun, but not directly related to our use case here
 
@@ -130,7 +130,7 @@ const studentSubjects: ObjOfArrays<string> = {
 studentSubjects.names.push('Reginald')
 ```
 
-```obj2.test3``` does not exist, but our typing allows us to call an array method on it. To mitigate this risk, we can add an undefined union, which does something really cool, if you type out the last line again, TS will automatically add optional chaining in
+``studentSubjects.names`` does not exist, but our typing allows us to call an array method on it. To mitigate this risk, we can add an undefined union, which does something really cool, if you type out the last line again, TS will automatically add optional chaining in
 
 ```ts
 type ObjOfArrays<T> = Record<string, any[] | undefined>
