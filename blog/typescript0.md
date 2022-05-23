@@ -104,6 +104,7 @@ const myArr = [person1, person2, person3]
 
 removeObjectFromArrByKey(myArr, "age", 32) // valid
 removeObjectFromArrByKey(myArr, "name", "mike") // valid
+removeObjectFromArrByKey(myArr, "name", person1.name) // valid
 removeObjectFromArrByKey(myArr, "title", "Mr") // error, the key is invalid
 removeObjectFromArrByKey(myArr, "age", "thirty") // error, the value is of the wrong type
 ```
