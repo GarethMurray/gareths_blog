@@ -7,7 +7,7 @@ excerpt: It is easier than it look
 
 I feel as though images are largely neglected, but there's a lot of benefits to be had by optimising images. They're a key factor to page loads and can decrease core web vitals significantly if used correctly.
 
-Firstly, the img element is dead[1] <sup>[1]Not really</sup>
+Firstly, the img element is dead* <sup>Not really</sup>
 
 We should be nesting it within a picture element.
 
