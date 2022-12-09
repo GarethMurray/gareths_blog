@@ -1,3 +1,8 @@
+---
+title: Deno or Deyes
+date: 2022-12-19
+excerpt: Are alternative runtimes, ready for production TS?
+---
 I'm preparing a deno talk
 
 The idea is to migrate an existing production grade service from lambdas to deno.deploy
@@ -51,7 +56,7 @@ TRPC
 - Supports all 3
 - BLAZINGLY fast
 - No deps
-- 
+
 
 #### Oak
 - Inspired by Koa
@@ -77,3 +82,10 @@ TRPC
 - Inspired by Hapi
 - 
 
+#### Hyper-Express and uWebsockets
+- No worky
+- Bad attitude 🤷🏻‍♂️
+- Superduper fast (Out of JS land)
+
+
+But our objective is not speed****

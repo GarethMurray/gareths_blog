@@ -6,9 +6,11 @@
 - Definitely a dog person 🐕
 - True mechanical keyboard endgame is split low profile and something like colemak ⌨️
 - I'm an advocate for simplicity as far as possible 👍
-- I am currently a senior frontend developer at DVT, but making my way downtown to the fullstack life 🥞
-- I also run the Remix-JHB meetup and will soon be hosting React.Africa 🚀
-- React is good, Nextjs is great. Preact might be better (outside of how it handles complicated types), Solid is definitely better. But right now I'm enjoying Sveltekit - it feels around the maturity of Preact (less than Vue), but with some super niceties that you'd find in NextJs 🤷‍♂️
+- I am currently a Fullstack Tech Lead at Peach Payments 🥞
+- I also run the Remix-JHB meetup and React.Africa 🚀
+- React is good, Nextjs is great. Preact might be better (outside of how it handles forwardrefs). 
+- I enjoy Sveltekit - even after the folder (not file) based routing changes, while it feels lacks some maturity🤷‍♂️ Working with SFCs reminds me of Vue, wich I enjoy
+- SolidStart is the black horse to watch
 - I prefer tailwindcss to css-in-js or styled components. But I want to support Windicss because they're driving incredible innovation - also Unocss which is gonna be 🐐
 - Also, I like emojis
 
