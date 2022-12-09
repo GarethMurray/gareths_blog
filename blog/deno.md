@@ -63,7 +63,7 @@ TRPC
 ### Alosaur
 - All the decorators - inspired by Nest?
 - All the DI
-- Generates OpenApi spec <3
+- Generates OpenApi spec 💖
 
 ### Aqua
 - Very minimal
