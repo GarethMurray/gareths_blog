@@ -39,7 +39,7 @@ In my experience, the most effective wayto become proficient in a new technology
 Interestingly enough, there's a similar idea around immersion in language (the spoken kinda) learning.
 
 ### 4. Always ask why:
-*And no, your litte cousin repeating *why* for two days straight is not what I'm getting at.* 
+*And no, your litte cousin repeating "why"  for two days straight is not what I'm getting at.* 
 
 Our job as developers, foundationally, is to solve problems. it's critical to understand the reasoning as to why things are done in certain ways. One of the most valuable lessons I have learned is to always ask why. 
 
