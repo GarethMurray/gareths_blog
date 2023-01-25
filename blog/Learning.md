@@ -24,7 +24,7 @@ The more I failed, the more I learned, and the more I grew as a developer. It is
 
 There is not much that I can attest to more strongly, than consistency trumping whims of explosive effort. In the early days of my career, in fact, even until recently, I used to work long hours and on multiple occassions, have burned myself out. Rationally and short-sightedly, I thought that by working harder and longer, I would be able to achieve more. While it met the shortterm needs, this approach was not sustainable and projects suffered on the long term. 
 
-*Nothing kills passion, like things being forced* 👀 I feel a though this is also a general life lesson
+*Nothing kills passion, like things being forced* 👀 I feel as though this is also a general life lesson
 
 The key is to try and maintain a consistent pace, even when things get tough - and that is when it's hardest to not overdo it. Some bursts here and there are fine. But nothing has set my learning trajectory back, the way that crunchtime does. By working consistently, you're more inclined to enjoy what you do, and you'll be able to achieve more in the long run.
 
@@ -41,7 +41,11 @@ Interestingly enough, there's a similar idea around immersion in language (the s
 ### 4. Always ask why:
 *And no, your litte cousin repeating *why* for two days straight is not what I'm getting at.* 
 
-As a developer, it's critical to understand the reasoning as to why things are done in certain ways. One of the most valuable lessons I have learned is to always ask why. By asking why, you'll gain a deeper understanding of the problem you're trying to solve and come up with better solutions. Asking why will help you to understand the underlying principles and concepts that are at play, which will allow you to make better decisions and write better code.
+Our job as developers, foundationally, is to solve problems. it's critical to understand the reasoning as to why things are done in certain ways. One of the most valuable lessons I have learned is to always ask why. 
+
+The same applies to questions that feels like they might be obvious, and you are apprehensive of asking a *dumb* question, it is doubly important to ask - as that's a great opportunity to learn. I'm also usually of the opinion that the onus here is on the explainer, to ensure that the message is effectively communicated, but this is a topic for a different post.
+
+By asking why, you'll gain a deeper understanding of the problem you're trying to solve and come up with better solutions. Asking why will help you to understand the underlying principles and concepts that are at play, which will allow you to make better decisions and write better code.
 
 ### 5. Talk about your thoughts: 
 Another important lesson I have learned is the importance of sharing your ideas and thoughts with others. As a developer, it's essential to get feedback on your work and to learn from others. Collaboration is key to growth as a developer. By sharing your thoughts and ideas with others, you'll be able to get a different perspective on your work and learn from others' experiences.
