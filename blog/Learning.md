@@ -18,7 +18,7 @@ When I started my developer career, the fear of failure outweighed my desire to 
 
 The more I failed, the more I learned, and the more I grew as a developer. It is important to remember that failure is not the end; it is just an opportunity to learn and improve.
 
-#### 2. Consistency trumps explosive effort: 
+### 2. Consistency trumps explosive effort: 
 
 *Let's see your commit history* - My favourite part of interviews
 
