@@ -47,10 +47,12 @@ The same applies to questions that feels like they might be obvious, and you are
 
 By asking why, you'll gain a deeper understanding of the problem you're trying to solve and come up with better solutions. Asking why will help you to understand the underlying principles and concepts that are at play, which will allow you to make better decisions and write better code.
 
-### 5. Talk about your thoughts: 
+### 5. Talk about your thoughts:
+
 Another important lesson I have learned is the importance of sharing your ideas and thoughts with others. As a developer, it's essential to get feedback on your work and to learn from others. Collaboration is key to growth as a developer. By sharing your thoughts and ideas with others, you'll be able to get a different perspective on your work and learn from others' experiences.
 
 ### 6. Don't get too hung up on trends: 
+
 Lastly, I have learned that it's important to not get too hung up on trends. Technology is constantly evolving, and it can be easy to get caught up in the latest trends. However, it's important to focus on what's important and to not get too hung up on the latest and greatest technology. Instead, focus on the fundamentals and the principles that underlie the technology you're working with. This will give you a solid foundation that will last you throughout your career, regardless of the latest trends. By not getting too hung up on trends, you'll be able to make more informed decisions and build better, more sustainable systems.
 
-In conclusion, becoming a senior developer takes time, hard work, and consistency. By following these lessons, you'll be well on your way to reaching your goals. Remember that failure is a natural part of the process, and that it's essential to learn from it. Keep working hard and stay consistent, and you'll get there in no time. Keep in mind that it is a journey, not a destination, and you will always be learning and growing as a developer.
+In conclusion, becoming a senior developer is the product of trajectory and time. By following these lessons, you can try make sure you're staying close to the correct path to reaching your goals. Keep in mind that it is a perpetual journey, not a specific destination, a developer will always be learning.
