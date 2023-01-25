@@ -9,14 +9,13 @@ I feel as though images are largely neglected, but there's a lot of benefits to 
 
 Firstly, the img element is dead* <sup>Not really</sup>
 
-We should be nesting it within a picture element.
+While we can use srcset to load different content sources, we can have much more fine grained control using a picture element.
 
 The picture element allows us to configure multiple sources. This will enable us to reference different source images based on media queries.
 
-We do this by creating multiple sources and a single im within picture element. Each source's media attribute is evaluated, and the first to match true will be used as a source for the picture
+We do this by creating multiple sources and a single img within picture element. Each source's media attribute is evaluated, and the first to match true will be used as a source for the picture
 
 ```html
-
 <picture>
 	<source
 		type="image/webp"
@@ -34,6 +33,4 @@ We do this by creating multiple sources and a single im within picture element. 
 		decoding="auto"
 	/>
 </picture>
-		
-
 ```

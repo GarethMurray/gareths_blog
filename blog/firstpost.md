@@ -15,4 +15,4 @@ excerpt: Details about this blog and my future plans!
 
 - I'm always learning about JS/TS
 - I have been slowly picking up Go for the past couple of months
-- I'll also document learning SQL for FE devs here
+- I'll also document learnings about SQL here as I remove ORM training wheels
