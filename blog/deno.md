@@ -87,5 +87,11 @@ TRPC
 - Bad attitude 🤷🏻‍♂️
 - Superduper fast (Out of JS land)
 
+#### Fastify
+- No worky
+
+#### Express
+- Works
+- Slow af so who cares
 
 But our objective is not speed****
