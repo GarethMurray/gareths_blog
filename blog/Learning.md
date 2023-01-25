@@ -29,19 +29,18 @@ There is not much that I can attest to more strongly, than consistency trumping 
 The key is to try and maintain a consistent pace, even when things get tough - and that is when it's hardest to not overdo it. Some bursts here and there are fine. But nothing has set my learning trajectory back, the way that crunchtime does. By working consistently, you're more inclined to enjoy what you do, and you'll be able to achieve more in the long run.
 
 ### 3. Repetition is key to fluency:
-*Practice makes permanent*
-
-In our industry, we're constantly learning new technologies, mental models and languages. 
 
 > Developers hate him. This one weird trick senior developers don't want you to find out
 
-Lukewarm take: The big secret to getting fluent and comfortable, is repetition.
+In our industry, we're constantly learning new technologies, mental models and languages. Lukewarm take: The big secret to getting fluent and comfortable, is repetition.
 
 In my experience, the most effective wayto become proficient in a new technology or programming language, you need to practice it over and over again. The more you practice, the better you will become. Repetition is the key to fluency, and the more you practice, the more comfortable you will feel with the new technology or language.
 
 Interestingly enough, there's a similar idea around immersion in language (the spoken kinda) learning.
 
 ### 4. Always ask why:
+And no, your litte cousin repeating *why* for two days straight is not what I'm getting at. 
+
 As a developer, it's critical to understand the reasoning as to why things are done in certain ways. One of the most valuable lessons I have learned is to always ask why. By asking why, you'll gain a deeper understanding of the problem you're trying to solve and come up with better solutions. Asking why will help you to understand the underlying principles and concepts that are at play, which will allow you to make better decisions and write better code.
 
 ### 5. Talk about your thoughts: 
