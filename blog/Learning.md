@@ -5,8 +5,7 @@ excerpt: 6 Lessons learned over a development career
 ---
 
 <h1 style="margin-bottom: 0;">Junior to Senior</h1>
-
-## My Journey and the Lessons I Learned Along the Way
+<h2>My Journey and the Lessons I Learned Along the Way</h2>
 
 As a developer, there is always a sense of pressure to be at the top of your game. The journey from a junior developer to a senior developer can be a challenging one, but it is also an incredibly rewarding experience. Through my own journey, I have learned several valuable lessons that I want to share with others who are also on the path to becoming a senior developer.
 
