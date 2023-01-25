@@ -49,7 +49,9 @@ By asking why, you'll gain a deeper understanding of the problem you're trying t
 
 ### 5. Talk about your thoughts:
 
-Another important lesson I have learned is the importance of sharing your ideas and thoughts with others. As a developer, it's essential to get feedback on your work and to learn from others. Collaboration is key to growth as a developer. By sharing your thoughts and ideas with others, you'll be able to get a different perspective on your work and learn from others' experiences.
+Another important lesson I have learned is the importance of sharing your ideas and thoughts with others. As a developer, it's essential to not only get feedback on your work but also learn about mental models from different perspectives. I often use the analogy of filling in a puzzle, it takes a whole bunch of pieces to complete the image and each step of these discussions could be an additional piece for you to fill in.
+
+Collaboration is key to growth as a developer. By sharing your thoughts and ideas with others, you'll be able to get a different perspective on your work and learn from others' experiences. It is exponentially more difficult to break new ground independently, than for someone to help guide your way.
 
 ### 6. Don't get too hung up on trends: 
 
