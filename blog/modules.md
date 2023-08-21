@@ -1,5 +1,5 @@
 ---
-title: "odules Over Singletons in TypeScript"
+title: "Modules Over Singletons in TypeScript"
 date: 2023-08-15
 excerpt:  A Pragmatic Approach
 ---
