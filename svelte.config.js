@@ -21,7 +21,7 @@ const config = {
   preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
   kit: {
     adapter: adapter(),
-    inlineStyleThreshold: 1024,
+    inlineStyleThreshold: 102400,
     alias: {
       $blog: 'blog',
       $components: 'src/components'
