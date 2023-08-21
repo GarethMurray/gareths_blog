@@ -1,41 +1,30 @@
-// import adapter from '@sveltejs/adapter-static'
-import adapter from '@sveltejs/adapter-auto'
-import preprocess from 'svelte-preprocess'
+import adapter from '@sveltejs/adapter-vercel'
+import { vitePreprocess } from '@sveltejs/kit/vite'
+
 import { mdsvex } from 'mdsvex'
-import { resolve } from 'path'
-import rehypeAutolinkHeadings from 'rehype-autolink-headings'
+import remarkUnwrapImages from 'remark-unwrap-images'
 import rehypeSlug from 'rehype-slug'
-import remarkMdx from 'remark-mdx'
+
+/** @type {import('mdsvex').MdsvexOptions} */
+const mdsvexOptions = {
+  extensions: ['.md'],
+  layout: {
+    _: './src/mdsvex.svelte'
+  },
+  remarkPlugins: [remarkUnwrapImages],
+  rehypePlugins: [rehypeSlug]
+}
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   extensions: ['.svelte', '.md'],
-  preprocess: [
-    preprocess(),
-    mdsvex({
-      layout: false,
-      extension: '.md',
-      rehypePlugins: [rehypeSlug, rehypeAutolinkHeadings],
-      remarkPlugins: [remarkMdx]
-    })
-  ],
+  preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
   kit: {
-    prerender: { default: true },
-    inlineStyleThreshold: 102400,
     adapter: adapter(),
-    vite: () => ({
-      server: {
-        fs: {
-          allow: ['.']
-        }
-      },
-      resolve: {
-        alias: {
-          $blog: resolve('./blog'),
-          $components: resolve('./src/components')
-        }
-      }
-    })
+    alias: {
+      $blog: 'blog',
+      $components: 'src/components'
+    }
   }
 }
 
