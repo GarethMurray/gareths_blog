@@ -19,7 +19,7 @@
     <h4 class="mb-6">A bit <Link href="/about">about me</Link></h4>
     {#if data?.posts}
       {#each data.posts as post}
-        <Link href={post.slug}>
+        <a href={post.slug}>
           <div
             class="group my-4 -mx-4 rounded py-4 px-4 transition-transform hover:-translate-y-px hover:shadow-2xl hover:shadow-dark-800 hover:text-light-50"
           >
@@ -34,7 +34,7 @@
             </span>
             <Underline />
           </div>
-        </Link>
+        </a>
       {/each}
     {:else}
       <h3 class="mb-4">No posts yet</h3>
