@@ -1,18 +1,9 @@
 <div class="prose prose-invert">
 
-  <h2> Some stuff about me / thoughts I have </h2>
-  
-  <li>I have an unhealthy relationship with optimisation - you know when you optimise for an event that'll never happen? 🚤</li>
-  <li>Definitely a dog person 🐕</li>
-  <li>True mechanical keyboard endgame is split low profile without row stagger</li>
-    <li>Colemak-dh ⌨️ over Workman over Dvorak</li>
-  <li>I'm an advocate for simplicity as far as possible 👍</li>
-  <li>I am currently a Fullstack Tech Lead at Peach Payments 🥞</li>
-  <li>I also run the Remix-JHB meetup and React.Africa 🚀</li>
-  <li>Framework wars are a distraction. </li>
-  <li>But also, I really like Solidjs</li>
-  <li>This was built with Sveltekit, and was updated after the change from file-based to folder-based routing.</li>
-  <li>SFCs are great, they remind me of Vue, wich I really enjoyed</li>
-  <li>I really want to work with PandaCSS</li>
+<h2>My background in programming and Machine Learning</h2>
+<p>I have enjoyed programming since I was very young around 13 years old. I started learning Delphi at High School, then C++ and Matlab at University. While I was working, I developed my Excel skills significantly and I learnt VBA in Excel. In 2019, I started teaching myself Python. I really enjoyed automating processes and I started writing scripts to make my monotonous work less effort.</p>
+
+<p>When I looked into Data Science in Python, I realised there was a lot of overlap with what I had been doing during my career (with trend monitoring, troubleshooting, regression, process models). I became really interested in Data Science and Machine Learning and started to learn this in my spare time. My partner works in air quality and human health and she was able  I have developed a few repositories. A lot of the repositories that I have worked on contain confidential information (human health) so they need to remain Private. There is too much to add to my LinkedIn page, so I thought it would be a better idea to separate it for anyone who was interested to read it.</p>
 
 </div>
+
