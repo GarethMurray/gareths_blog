@@ -1,24 +1,10 @@
 ---
 title: Gareth Murray's Online CV
-date: 2023-10-22
+date: 2023-10-22 23:59
 excerpt: A space to talk about the things that I love to do
 ---
 
 <em class='text-g'>Thank you for taking the time to follow this link. I really love automation, Python, Data Science and Machine learning, and am happy that I can share some of my favourite things with you below!</em>
-
-<a href="background">Background</a>
-
-## Degress
-I have a Bachelor's degree and a Master's degree:
-- B.Eng Chemical Engineering
-- M.Eng Engineering Management
-
-I chose the M.Eng Engineering Management as I wanted to focus a bit more on project processes but I didn't want to move out of the technical field. I then decided that the M.Eng was a nice combination of technical and management/project management. 
-
-## Hobbies
-I enjoy cooking, and would say this is one of my primary hobbies. I enjoy trying new recipes, making sourdough bread, making fermented foods and hotsauces. I enjoy going to gym and in my spare time, I like to walk the dogs in the park, watch series or anime, work on my home automation system or game on the computer. I would like to get into snowboarding, which I enjoyed but was not really able to do in South Africa. I used to do boxing, so I am looking for a boxing gym to go to when things settle down.
-
-## Accomplishments
 
 ### Data for WHO database 
 I wrote a script that would scrape data from a website using POST requests and I cleaned the data. My data helped to create one of the largest coherent ambient air quality datasets in Africa, which has been/ is being used in a number of environmental health studies. This work resulted in an acknowledgement in the World Health Organisation (WHO) ambient air quality database, 2022 update - Status report.
@@ -32,56 +18,6 @@ After I scraped and cleaned the data above, it was used in the article below, wh
  *"The Risk of Orofacial Cleft Lip/Palate Due to Maternal Ambient Air Pollution Exposure: A Call for Further Research in South Africa"*
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9881443/ 
 
-## Health and Air Quality Studies 
-
-### PhD-2022 (Private)
-<br>
-<span class='text-g'>PROBLEM:</span> My partner had received data from a study where two different groups that had interviewed a low-income community regarding human health. Unfortunately, a lot of the responses differed in format.
-<br>
-<span class='text-g'>GOAL:</span> Clean the data, analyse it and see if correlations can be found between several air quality measures and human health conditions.
-<br>
-<span class='text-g'>SOLUTION:</span> Data cleaning, data engineering and data analysis of the data was done.  Some of the column values had to be standardised, and dummy columns created. Based on various conditions, new columns were also created. 
-Some statistical evaluations were run on the data, and we also tried some machine learning models.  I tried a Random Forest model, but unfortunately, the results were not promising. The dataset was heavily skewed, simply due to the parameters monitored, e.g. 1 in 100 people had asthma, it was difficult to statistically prove that there was a common feature (confounder) between the people that tested positive, such as using a coal stove within their dwelling. 
-<br>
-<span class='text-g'>RESULT:</span> The dataset was used for several studies, as well as the basis for her PhD.
-
-### OFC_study_2021 (Orofacial Cleft Palette) (Private)
-<br>
-<span class='text-g'>PROBLEM:</span> Difficult as the website only allowed 1 day download at a time
-Couldn't get Selenium to work
-Originally used to click on each button based on location
-<br>
-<span class='text-g'>GOAL:</span> 
-<br>
-<span class='text-g'>SOLUTION:</span> I downloaded SAAQIS data using POST requests. Cleaning data (e.g. 05 Jan 2022 00:00 was registered as 04 Jan 2022 24:00)
-Mean, std_dev, count, missingno plot
-<br>
-<span class='text-g'>RESULT:</span> This data was used in a published article, discussed in "Accomplishments". Some of the results can be found below.
-
-![[Pasted image 20231019114326.png]]
-
-There were 146 stations, and every station needed to have it's own body for the POST request. I consulted with full-stack developers and we found that the POST requests for the site were very inefficient, with payloads of more than 12,000 characters. 
-![[Pasted image 20231019114523.png]]
-All data (2005-2021) can be found here:
-https://github.com/GarethMurray/SAAQIS_Environmental_Data
-
-Plotly plot of any stations measuring PM that is non-compliant with WHO standards:
-![[SA - Average PM2.5 (compliance)_2022.05.05.html]]
-
-
-### OFC_visualisation (Public)
-Geo-spatial plots from the abovementioned study can be found here:
-https://github.com/GarethMurray/OFC_visualisation
-
-### IndoorVsAmbient (Private)
-Compared measured indoor PM2.5 data to outdoor PM2.5 data. An example of some of the data can be seen below.
-<a href="output.png" target="_blank"> 
-    <img src="output.png">
-</a>
-
-
-### SAAQIS_Environmental_Data (Public)
-This is a repository where I have stored all the cleaned data from SAAQIS so that researchers can use this without having to go through what I went through.
 
 ## Calculations and Investigations
 
