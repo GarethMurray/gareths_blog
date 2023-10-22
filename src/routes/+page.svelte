@@ -12,6 +12,9 @@
 
 <section>
   <ul class="posts">
+    <h2 class ='mb-4>
+      A space to talk about the things that I love to do
+    </h2>
     <h3 class="mb-4">
       Thank you for taking the time to follow this link. I really love automation, Python, Data Science and Machine learning, and am happy that I can share some of my favourite things with you below!
     </h3>
