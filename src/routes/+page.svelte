@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-  <title>Gareth Murray's Online CV</title>
+  <title>Gareth Murray's Programming Portfolio</title>
 </svelte:head>
 
 <section>

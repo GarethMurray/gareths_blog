@@ -34,15 +34,18 @@ There were 146 stations, and every station needed to have it's own body for the 
 </a>
 <br>
 All data (2005-2021) can be found here:
-https://github.com/GarethMurray/SAAQIS_Environmental_Data
+
+[Github: SAAQIS_Environmental_Data](https://github.com/GarethMurray/SAAQIS_Environmental_Data)
 
 Plotly plot of any stations measuring PM that is non-compliant with WHO standards:
-![[SA - Average PM2.5 (compliance)_2022.05.05.html]]
+<iframe src="SA - Average PM2.5 (compliance)_2022.05.05.html" width="100%" height="500px" frameborder="0"></iframe>
 
 
 ### OFC_visualisation (Public)
 Geo-spatial plots from the abovementioned study can be found here:
-https://github.com/GarethMurray/OFC_visualisation
+
+[Github: OFC_visualisation](https://github.com/GarethMurray/OFC_visualisation)
+
 
 ### IndoorVsAmbient (Private)
 Compared measured indoor PM2.5 data to outdoor PM2.5 data. An example of some of the data can be seen below.
