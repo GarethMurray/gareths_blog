@@ -16,14 +16,11 @@ Some statistical evaluations were run on the data, and we also tried some machin
 <span class='text-g'>RESULT:</span> The dataset was used for several studies, as well as the basis for her PhD.
 
 ### OFC_study_2021 (Orofacial Cleft Palette) (Private)
-<span class='text-g'>PROBLEM:</span> Difficult as the website only allowed 1 day download at a time
-Couldn't get Selenium to work
-Originally used to click on each button based on location
+<span class='text-g'>PROBLEM:</span> We needed to get data from 146 different stations. This was difficult as the website only allowed a user to download one day. This was one of my first projects, and I couldn't get Selenium to work. Originally I wrote a script to click on each button based on location on the screen. I spoke to my friends and they taught me about POST requests, which ended up being much easier. 
 <br>
-<span class='text-g'>GOAL:</span> 
+<span class='text-g'>GOAL:</span> Download all 146 stations for the past 15 years. Place all data from a single station within a single spreadsheet.
 <br>
-<span class='text-g'>SOLUTION:</span> I downloaded SAAQIS data using POST requests. Cleaning data (e.g. 05 Jan 2022 00:00 was registered as 04 Jan 2022 24:00)
-Mean, std_dev, count, missingno plot
+<span class='text-g'>SOLUTION:</span> I downloaded all the SAAQIS data using POST requests. I cleaned the data (e.g. 05 Jan 2022 00:00 was registered as 04 Jan 2022 24:00), performed some analysis (mean, std_dev, count, missingno plot) and made sure there was no data that was not downloaded due to too many requests, faulty network etc.
 <br>
 <span class='text-g'>RESULT:</span> This data was used in a published article, discussed in "Accomplishments". Some of the results can be found below.
 
