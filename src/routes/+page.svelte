@@ -7,14 +7,13 @@
 </script>
 
 <svelte:head>
-  <title>Mike's blog</title>
+  <title>Gareth Murray's Online CV</title>
 </svelte:head>
 
 <section>
   <ul class="posts">
     <h3 class="mb-4">
-      Hi and welcome to my blog. Expect poor writing about javascript, typescript, go and maybe some
-      rants about the dev industry
+      Thank you for taking the time to follow this link. I really love automation, Python, Data Science and Machine learning, and am happy that I can share some of my favourite things with you below!
     </h3>
     <h4 class="mb-6">A bit <Link href="/about">about me</Link></h4>
     {#if data?.posts}
