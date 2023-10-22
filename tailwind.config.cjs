@@ -4,11 +4,12 @@ module.exports = {
   content: ['./src/**/*.svelte', './src/app.html', './blog/*.md'],
   theme: {
     colors: {
+      g: colors.emerald[500],
       black: colors.black,
       white: colors.white,
-      primary: colors.teal,
+      primary: colors.emerald,
       secondary: colors.cyan,
-      tertiary: colors.indigo,
+      tertiary: colors.rose,
       trasparent: colors.transparent,
       dark: {
         50: 'hsl(210,   5.0%,   39.0%)',

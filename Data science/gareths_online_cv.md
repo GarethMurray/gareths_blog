@@ -1,10 +1,10 @@
 ---
 title: Gareth Murray's Online CV
 date: 2023-10-22
-excerpt: An incredibly impressive block reveal
+excerpt: A space to talk about the things that I love to do
 ---
 
-<span style="color: #10755b; font-style: italic;">Thank you for taking the time to follow this link. I really love automation, Python, Data Science and Machine learning, and am happy that I can share some of my favourite things with you below!</span>
+<span color='10755b'; font-style: italic;">Thank you for taking the time to follow this link. I really love automation, Python, Data Science and Machine learning, and am happy that I can share some of my favourite things with you below!</span>
 
 <a href="background">Background</a>
 ## Background
@@ -36,19 +36,19 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9881443/
 
 ## Health and Air Quality Studies 
 ### PhD-2022 (Private)
-<font color='10755b'>PROBLEM:</font> My partner had received data from a study where two different groups that had interviewed a low-income community regarding human health. Unfortunately, a lot of the responses differed in format.
-<font color='10755b'>GOAL:</font> Clean the data, analyse it and see if correlations can be found between several air quality measures and human health conditions.
-<font color='10755b'>SOLUTION:</font> Data cleaning, data engineering and data analysis of the data was done.  Some of the column values had to be standardised, and dummy columns created. Based on various conditions, new columns were also created. 
+<span class='text-g'>PROBLEM:</span> My partner had received data from a study where two different groups that had interviewed a low-income community regarding human health. Unfortunately, a lot of the responses differed in format.
+<span color='10755b'>GOAL:</span> Clean the data, analyse it and see if correlations can be found between several air quality measures and human health conditions.
+<span color='10755b'>SOLUTION:</span> Data cleaning, data engineering and data analysis of the data was done.  Some of the column values had to be standardised, and dummy columns created. Based on various conditions, new columns were also created. 
 Some statistical evaluations were run on the data, and we also tried some machine learning models.  I tried a Random Forest model, but unfortunately, the results were not promising. The dataset was heavily skewed, simply due to the parameters monitored, e.g. 1 in 100 people had asthma, it was difficult to statistically prove that there was a common feature (confounder) between the people that tested positive, such as using a coal stove within their dwelling. 
-<font color='10755b'>RESULT:</font> The dataset was used for several studies, as well as the basis for her PhD.
+<span color='10755b'>RESULT:</span> The dataset was used for several studies, as well as the basis for her PhD.
 ### OFC_study_2021 (Orofacial Cleft Palette) (Private)
-<font color='10755b'>PROBLEM:</font> Difficult as the website only allowed 1 day download at a time
+<span color='10755b'>PROBLEM:</span> Difficult as the website only allowed 1 day download at a time
 Couldn't get Selenium to work
 Originally used to click on each button based on location
-<font color='10755b'>GOAL:</font> 
-<font color='10755b'>SOLUTION:</font> I downloaded SAAQIS data using POST requests. Cleaning data (e.g. 05 Jan 2022 00:00 was registered as 04 Jan 2022 24:00)
+<span color='10755b'>GOAL:</span> 
+<span color='10755b'>SOLUTION:</span> I downloaded SAAQIS data using POST requests. Cleaning data (e.g. 05 Jan 2022 00:00 was registered as 04 Jan 2022 24:00)
 Mean, std_dev, count, missingno plot
-<font color='10755b'>RESULT:</font> This data was used in a published article, discussed in "Accomplishments". Some of the results can be found below.
+<span color='10755b'>RESULT:</span> This data was used in a published article, discussed in "Accomplishments". Some of the results can be found below.
 
 ![[Pasted image 20231019114326.png]]
 
@@ -65,7 +65,10 @@ Geo-spatial plots from the abovementioned study can be found here:
 https://github.com/GarethMurray/OFC_visualisation
 ### IndoorVsAmbient (Private)
 Compared measured indoor PM2.5 data to outdoor PM2.5 data. An example of some of the data can be seen below.
-![[output.png]]
+<a href="output.png" target="_blank"> 
+    <img src="output.png">
+</a>
+
 ### SAAQIS_Environmental_Data (Public)
 This is a repository where I have stored all the cleaned data from SAAQIS so that researchers can use this without having to go through what I went through.
 
@@ -99,78 +102,78 @@ Another issue that came up during my design was the acid condensation point of t
 
 ## Problem solving tools that I have made
 ### Datasheet populator
-<font color='10755b'>PROBLEM:</font> I had 16 control valve datasheets that had to be populated. Every time there would be a small change, all datasheets would had to be updated. This took some time as I had to wait for each datasheet to open, I'd have to navigate to the correct cell and make the same change. This manual action also introduces the possibility of making mistakes.
-<font color='10755b'>GOAL:</font> To have all the process data in a single spreadsheet. I make all the changes from here, and the script runs through each datasheet and populates it accordingly.
-<font color='10755b'>SOLUTION:</font> I automated population of separate datasheets from a table using pandas.
-<font color='10755b'>RESULT:</font> We were still in the early design phases so there were many changes and I ended up with saving more time than it took to write the code.
+<span color='10755b'>PROBLEM:</span> I had 16 control valve datasheets that had to be populated. Every time there would be a small change, all datasheets would had to be updated. This took some time as I had to wait for each datasheet to open, I'd have to navigate to the correct cell and make the same change. This manual action also introduces the possibility of making mistakes.
+<span color='10755b'>GOAL:</span> To have all the process data in a single spreadsheet. I make all the changes from here, and the script runs through each datasheet and populates it accordingly.
+<span color='10755b'>SOLUTION:</span> I automated population of separate datasheets from a table using pandas.
+<span color='10755b'>RESULT:</span> We were still in the early design phases so there were many changes and I ended up with saving more time than it took to write the code.
 ### Find large files (for harddrive sorting)
-<font color='10755b'>PROBLEM:</font> I didn't like how long the windows search took, and how it wasn't really customisable.
-<font color='10755b'>GOAL:</font> Make a customisable searching tool that will print all files larger than a certain size within a certain folder. 
-<font color='10755b'>SOLUTION:</font> I wrote a script that did this. It outputs to terminal as I did not need anything fancy.
-<font color='10755b'>RESULT:</font> The script works well, and fulfilled my needs. I now use it frequently when sorting through my harddrive.
+<span color='10755b'>PROBLEM:</span> I didn't like how long the windows search took, and how it wasn't really customisable.
+<span color='10755b'>GOAL:</span> Make a customisable searching tool that will print all files larger than a certain size within a certain folder. 
+<span color='10755b'>SOLUTION:</span> I wrote a script that did this. It outputs to terminal as I did not need anything fancy.
+<span color='10755b'>RESULT:</span> The script works well, and fulfilled my needs. I now use it frequently when sorting through my harddrive.
 ### Find specific files based on keywords (better than Windows search)
-<font color='10755b'>PROBLEM:</font> Windows search doesn't allow a whitelist of keywords, and I wanted to search for many separate terms at once.
-<font color='10755b'>GOAL:</font> Make a customisable searching tool that will print all files with filenames containing the phrases within a whitelist within a certain folder. 
-<font color='10755b'>SOLUTION:</font> I wrote a script that did exactly this.
-<font color='10755b'>RESULT:</font> I was really happy with this script. It made it so much easier to search for datasheets that document control did not place in the correct folder, or name correctly.
+<span color='10755b'>PROBLEM:</span> Windows search doesn't allow a whitelist of keywords, and I wanted to search for many separate terms at once.
+<span color='10755b'>GOAL:</span> Make a customisable searching tool that will print all files with filenames containing the phrases within a whitelist within a certain folder. 
+<span color='10755b'>SOLUTION:</span> I wrote a script that did exactly this.
+<span color='10755b'>RESULT:</span> I was really happy with this script. It made it so much easier to search for datasheets that document control did not place in the correct folder, or name correctly.
 ### Download flight prices for a specific flight 
-<font color='10755b'>PROBLEM:</font> A friend of mine was going to Canada from the Netherlands and found that the price of flights fluctuated from day-to-day. He wanted to buy the tickets at the cheapest price, but this also meant that he was open to landing at different airports. He wanted to check 16 different routes, daily, and monitor the trend so that he could buy the right route at the right time.
-<font color='10755b'>GOAL:</font> Write a script to scrape flight data from (a website). 
-<font color='10755b'>SOLUTION:</font> I wrote a script to scrape the flight data and append this data to an existing table in Excel. It was then easy for him to plot the trends and keep an eye on it. 
-<font color='10755b'>RESULT:</font> I could not find anything in the terms of use that disallowed it, but to be safe, I told him to run the code no more than once a day. He managed to see when the price was low, and bought the tickets from one of the selected routes. 
+<span color='10755b'>PROBLEM:</span> A friend of mine was going to Canada from the Netherlands and found that the price of flights fluctuated from day-to-day. He wanted to buy the tickets at the cheapest price, but this also meant that he was open to landing at different airports. He wanted to check 16 different routes, daily, and monitor the trend so that he could buy the right route at the right time.
+<span color='10755b'>GOAL:</span> Write a script to scrape flight data from (a website). 
+<span color='10755b'>SOLUTION:</span> I wrote a script to scrape the flight data and append this data to an existing table in Excel. It was then easy for him to plot the trends and keep an eye on it. 
+<span color='10755b'>RESULT:</span> I could not find anything in the terms of use that disallowed it, but to be safe, I told him to run the code no more than once a day. He managed to see when the price was low, and bought the tickets from one of the selected routes. 
 
 ## Things to improve my personal life
 
 ### Warframe (Private)
-<font color='10755b'>PROBLEM:</font> I played a game online that has an in-game currency. A person can sell items that they have collected for this currency, on a type of auction. One would constantly need to check the price of certain items to see if someone was selling it for a price below what I wanted to spend.
-<font color='10755b'>GOAL:</font> Create a script that would run though a whitelist of items and tell me if any of them were selling for a price lower than my stipulated target.
-<font color='10755b'>SOLUTION:</font> I would create a list of all the items that I was shopping for, and the script would iterate through each and find every instance of that item using a fuzzy search that is still for sale. I kept track of median and minimum prices, as well as the age of the item on the market. 
-<font color='10755b'>RESULT:</font> I managed to get all my items for a good price, and used the same app to estimate what I should sell my items for.
+<span color='10755b'>PROBLEM:</span> I played a game online that has an in-game currency. A person can sell items that they have collected for this currency, on a type of auction. One would constantly need to check the price of certain items to see if someone was selling it for a price below what I wanted to spend.
+<span color='10755b'>GOAL:</span> Create a script that would run though a whitelist of items and tell me if any of them were selling for a price lower than my stipulated target.
+<span color='10755b'>SOLUTION:</span> I would create a list of all the items that I was shopping for, and the script would iterate through each and find every instance of that item using a fuzzy search that is still for sale. I kept track of median and minimum prices, as well as the age of the item on the market. 
+<span color='10755b'>RESULT:</span> I managed to get all my items for a good price, and used the same app to estimate what I should sell my items for.
 
 An example of a certain piece of equipment can be found below:
 ![[Pasted image 20231019121508.png]]
 ![[Pasted image 20231019121459.png]]
 ### Payslip_check (Private)
 I created a Jupyter Notebook to work through my payslips and extract all the values using regex (as I was paid an hourly rate, my pay differed from week to week). I exported this to a spreadsheet for further analysis, and to compare to a new offer that I had received.
-<font color='10755b'>PROBLEM:</font> I received a new job offer and I needed to compare the new offer to my current offer (actual cost to company). Unfortunately, my (then) current job paid by the hour so the monthly rates differed. 
-<font color='10755b'>GOAL:</font> Look at the past year's data, and average all incomes and deductions.
-<font color='10755b'>SOLUTION:</font> I wrote a script to walk through the folder with all my payslips and to use regex to extract each item. It would then place everything in a dataframe, and would output an xlsx file.
-<font color='10755b'>RESULT:</font> I managed to properly analyse my current salary and all benefits and make an informed decision about the job offer.
+<span color='10755b'>PROBLEM:</span> I received a new job offer and I needed to compare the new offer to my current offer (actual cost to company). Unfortunately, my (then) current job paid by the hour so the monthly rates differed. 
+<span color='10755b'>GOAL:</span> Look at the past year's data, and average all incomes and deductions.
+<span color='10755b'>SOLUTION:</span> I wrote a script to walk through the folder with all my payslips and to use regex to extract each item. It would then place everything in a dataframe, and would output an xlsx file.
+<span color='10755b'>RESULT:</span> I managed to properly analyse my current salary and all benefits and make an informed decision about the job offer.
 ### Bat_installer (Public)
-<font color='10755b'>PROBLEM:</font> Every time that I format my computer, I have to manually reinstall all of my apps.
-<font color='10755b'>GOAL:</font> Automatically install all apps within a folder, even if they are a slightly older version (the app will update itself automatically)
-<font color='10755b'>SOLUTION:</font> I eventually wrote a small script to run all files in a specified folder. 
-<font color='10755b'>RESULT:</font>The script still required me to press the "Next" button but I intend to find a workaround for this some day.
+<span color='10755b'>PROBLEM:</span> Every time that I format my computer, I have to manually reinstall all of my apps.
+<span color='10755b'>GOAL:</span> Automatically install all apps within a folder, even if they are a slightly older version (the app will update itself automatically)
+<span color='10755b'>SOLUTION:</span> I eventually wrote a small script to run all files in a specified folder. 
+<span color='10755b'>RESULT:</span>The script still required me to press the "Next" button but I intend to find a workaround for this some day.
 ### Drivers_Licence (Private)
-<font color='10755b'>PROBLEM:</font> In South Africa, they realease slots for you to renew your driver's license every couple of hours. I had tried refreshing the page every now and then but I was not finding a slot. 
-<font color='10755b'>GOAL:</font> Write a script to monitor the website for me and tell me when I can book an appointment.
-<font color='10755b'>SOLUTION:</font> I then wrote a script that would monitor the site and send me a message to my phone (on Pushbullet) informing me of the available time slots (filtered by when I was available).
-<font color='10755b'>RESULT:</font> I received a message on my phone about the driver's license appointment time available and I booked my appointment in the same day that I completed the program.
+<span color='10755b'>PROBLEM:</span> In South Africa, they realease slots for you to renew your driver's license every couple of hours. I had tried refreshing the page every now and then but I was not finding a slot. 
+<span color='10755b'>GOAL:</span> Write a script to monitor the website for me and tell me when I can book an appointment.
+<span color='10755b'>SOLUTION:</span> I then wrote a script that would monitor the site and send me a message to my phone (on Pushbullet) informing me of the available time slots (filtered by when I was available).
+<span color='10755b'>RESULT:</span> I received a message on my phone about the driver's license appointment time available and I booked my appointment in the same day that I completed the program.
 ### Appointment for biometrics (Private)
-<font color='10755b'>PROBLEM:</font> In the Netherlands, I needed to make an appointment to take my biometrics. There were few appointme
-<font color='10755b'>GOAL:</font> Write a script to monitor the website for me and tell me when I can book an appointment.
-<font color='10755b'>SOLUTION:</font> I then wrote a script that would monitor the site and send me a message to my phone (on Pushbullet) informing me of the available time slots
-<font color='10755b'>RESULT:</font> I printed the results every 30 seconds to a simple GUI. While I continued working, I left it in the corner on my second screen, and it would refresh. If an appropriate slot was found, the line would turn red to catch my attention. An appropriate appointment was made that same week.
+<span color='10755b'>PROBLEM:</span> In the Netherlands, I needed to make an appointment to take my biometrics. There were few appointme
+<span color='10755b'>GOAL:</span> Write a script to monitor the website for me and tell me when I can book an appointment.
+<span color='10755b'>SOLUTION:</span> I then wrote a script that would monitor the site and send me a message to my phone (on Pushbullet) informing me of the available time slots
+<span color='10755b'>RESULT:</span> I printed the results every 30 seconds to a simple GUI. While I continued working, I left it in the corner on my second screen, and it would refresh. If an appropriate slot was found, the line would turn red to catch my attention. An appropriate appointment was made that same week.
 ### dog_tags (Public)
-<font color='10755b'>PROBLEM:</font> My brother helped me with this repo. We wanted to get new dog tags for the dogs with our contact details on, but we weren't sure how soon we would move to a new house. We still wanted the person who found our missing dog to be able to return the dog to our house, even if we moved, without having to buy new dog tags every time.
-<font color='10755b'>GOAL:</font> Devise a system to allow us to reuse the dog tags when we move.
-<font color='10755b'>SOLUTION:</font> We decided to only include our phone numbers on the dog tag and on the reverse side, we had a QR code printed, which was to be used if we were not reachable via our phone. We did not want our home address on the internet with our associated phone numbers and email addresses, so the QR code would take the user to a site,hosted on Vercel, where they can input their contact details so that we could contact them. 
-<font color='10755b'>RESULT:</font> I hope to never need this app, but we tested it and it works well.
+<span color='10755b'>PROBLEM:</span> My brother helped me with this repo. We wanted to get new dog tags for the dogs with our contact details on, but we weren't sure how soon we would move to a new house. We still wanted the person who found our missing dog to be able to return the dog to our house, even if we moved, without having to buy new dog tags every time.
+<span color='10755b'>GOAL:</span> Devise a system to allow us to reuse the dog tags when we move.
+<span color='10755b'>SOLUTION:</span> We decided to only include our phone numbers on the dog tag and on the reverse side, we had a QR code printed, which was to be used if we were not reachable via our phone. We did not want our home address on the internet with our associated phone numbers and email addresses, so the QR code would take the user to a site,hosted on Vercel, where they can input their contact details so that we could contact them. 
+<span color='10755b'>RESULT:</span> I hope to never need this app, but we tested it and it works well.
 ### gmail_sorter (Private)
-<font color='10755b'>PROBLEM:</font> I found that my gmail inbox starts getting full when I am too busy to look at my emails. A lot of the time, it is due to newsletters, which I read when I have time, but are not a priority. I found gmail filters to not suit my needs. I had also got into the habit of sending myself quick messages as reminders - whether it was movies and series to watch, books to read, ideas to investigate, things I wanted to buy. 
-<font color='10755b'>GOAL:</font>  Archive all emails from a whitelist of email addresses that are more than 14 days old. All the email reminders should have their information extracted and be neatly stored somewhere.
-<font color='10755b'>SOLUTION:</font> I had to work in a Google Cloud project to do the authentication. Youtube videos and ChatGPT helped me with this a bit, as I was completely unaware that any of this existed. I created a whitelist of 300 emails addresses, and I run the code using windows scheduler daily. I made another script that would extract the body of each of the emails and add them all to a dataframe, which would be exported to a xlsx file.
-<font color='10755b'>RESULT:</font>  I managed to get to a zero inbox, after having more than 1000 unread mails. I feel like my emails are finally under control.
+<span color='10755b'>PROBLEM:</span> I found that my gmail inbox starts getting full when I am too busy to look at my emails. A lot of the time, it is due to newsletters, which I read when I have time, but are not a priority. I found gmail filters to not suit my needs. I had also got into the habit of sending myself quick messages as reminders - whether it was movies and series to watch, books to read, ideas to investigate, things I wanted to buy. 
+<span color='10755b'>GOAL:</span>  Archive all emails from a whitelist of email addresses that are more than 14 days old. All the email reminders should have their information extracted and be neatly stored somewhere.
+<span color='10755b'>SOLUTION:</span> I had to work in a Google Cloud project to do the authentication. Youtube videos and ChatGPT helped me with this a bit, as I was completely unaware that any of this existed. I created a whitelist of 300 emails addresses, and I run the code using windows scheduler daily. I made another script that would extract the body of each of the emails and add them all to a dataframe, which would be exported to a xlsx file.
+<span color='10755b'>RESULT:</span>  I managed to get to a zero inbox, after having more than 1000 unread mails. I feel like my emails are finally under control.
 ### telegram_db (Private)
-<font color='10755b'>PROBLEM:</font> Initially, I stored all my ideas on my e-mail, as an unread email to myself. These started getting lost so I decided to start storing these in a different way. I decided to find a better to store my quick notes. 
-<font color='10755b'>GOAL:</font> Find some way to log my thoughts on-the-go without having a cumbersome process. Bonus points if I can also include the category so that it is easier to find at a later stage.
-<font color='10755b'>SOLUTION:</font> Initially, I created a bot that would just store any new emails in a xlsx file. It was a bit cumbersome, as I needed to create a bat file to run the script, and run the bat file as a scheduled task from Windows Task Scheduler. The unfortunate thing was that it would only run if my computer was switched on. I decided to go another route - I tried to run the script on my HomeAssistant Raspberry Pi but I couldn't get this working. I decided to try and store it as a SQL using Heroku, but their free license offer has been discontinued. I then tried to run it on GCP (Google Cloud). I set up a virtual machine but could not get it to save my instance of my database.
-<font color='10755b'>RESULT:</font> This is still a work in progress!
+<span color='10755b'>PROBLEM:</span> Initially, I stored all my ideas on my e-mail, as an unread email to myself. These started getting lost so I decided to start storing these in a different way. I decided to find a better to store my quick notes. 
+<span color='10755b'>GOAL:</span> Find some way to log my thoughts on-the-go without having a cumbersome process. Bonus points if I can also include the category so that it is easier to find at a later stage.
+<span color='10755b'>SOLUTION:</span> Initially, I created a bot that would just store any new emails in a xlsx file. It was a bit cumbersome, as I needed to create a bat file to run the script, and run the bat file as a scheduled task from Windows Task Scheduler. The unfortunate thing was that it would only run if my computer was switched on. I decided to go another route - I tried to run the script on my HomeAssistant Raspberry Pi but I couldn't get this working. I decided to try and store it as a SQL using Heroku, but their free license offer has been discontinued. I then tried to run it on GCP (Google Cloud). I set up a virtual machine but could not get it to save my instance of my database.
+<span color='10755b'>RESULT:</span> This is still a work in progress!
 ### Banking (Private)
-<font color='10755b'>PROBLEM:</font> My partner and I have separate bank accounts. I want to split the costs fairly, but ometimes she buys groceries, and sometimes I do.
-<font color='10755b'>GOAL:</font> Develop a script to combine her banking transaction data with my  banking transaction data, categorise it, sort it, and display it.
-<font color='10755b'>SOLUTION:</font> I wrote a script that consolidates all transactions from my account (ABN Amro) and my partner's account (ING). It then categorises the transactions by keywords and outputs to a Dash dashboard, with dropdowns to filter for each user and for each category to analyse monthly spends.
-<font color='10755b'>RESULT:</font> I use the app regularly, and it has helped us to compare our monthly spends, both to make sure we spend evenly, but also to make sure that we are overall within budget.
+<span color='10755b'>PROBLEM:</span> My partner and I have separate bank accounts. I want to split the costs fairly, but ometimes she buys groceries, and sometimes I do.
+<span color='10755b'>GOAL:</span> Develop a script to combine her banking transaction data with my  banking transaction data, categorise it, sort it, and display it.
+<span color='10755b'>SOLUTION:</span> I wrote a script that consolidates all transactions from my account (ABN Amro) and my partner's account (ING). It then categorises the transactions by keywords and outputs to a Dash dashboard, with dropdowns to filter for each user and for each category to analyse monthly spends.
+<span color='10755b'>RESULT:</span> I use the app regularly, and it has helped us to compare our monthly spends, both to make sure we spend evenly, but also to make sure that we are overall within budget.
 
 ## Other
 ### Statistics (Public)
