@@ -13,7 +13,7 @@
 <section>
   <ul class="posts">
     <h3 class="mb-4">
-      Thank you for taking the time to follow this link. I really love automation, Python, Data Science and Machine learning, and am happy that I can share some of my favourite things with you below!
+      Thank you for taking the time to follow this link. This is a space to talk about the things that I love to do. I love automation, Python, Data Science and Machine learning, and am happy that I can share some of my favourite things with you below!
     </h3>
     <h4 class="mb-6">A bit <Link href="/about">about me</Link></h4>
     {#if data?.posts}
@@ -27,9 +27,6 @@
             </h3>
             <span class="flex md:items-end justify-between flex-col-reverse gap-2 md:flex-row">
               <h4 class="text-md font-light">{post.excerpt}</h4>
-              <h5 class="text-sm text-light-900 opacity-75">
-                {formatDate(post.date)}
-              </h5>
             </span>
             <Underline />
           </div>
