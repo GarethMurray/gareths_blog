@@ -1,24 +1,10 @@
 ---
 title: Gareth Murray's Online CV
-date: 2023-10-22
+date: 2023-10-22 01:00
 excerpt: A space to talk about the things that I love to do
 ---
 
 <em class='text-g'>Thank you for taking the time to follow this link. I really love automation, Python, Data Science and Machine learning, and am happy that I can share some of my favourite things with you below!</em>
-
-<a href="background">Background</a>
-
-## Degress
-I have a Bachelor's degree and a Master's degree:
-- B.Eng Chemical Engineering
-- M.Eng Engineering Management
-
-I chose the M.Eng Engineering Management as I wanted to focus a bit more on project processes but I didn't want to move out of the technical field. I then decided that the M.Eng was a nice combination of technical and management/project management. 
-
-## Hobbies
-I enjoy cooking, and would say this is one of my primary hobbies. I enjoy trying new recipes, making sourdough bread, making fermented foods and hotsauces. I enjoy going to gym and in my spare time, I like to walk the dogs in the park, watch series or anime, work on my home automation system or game on the computer. I would like to get into snowboarding, which I enjoyed but was not really able to do in South Africa. I used to do boxing, so I am looking for a boxing gym to go to when things settle down.
-
-## Accomplishments
 
 ### Data for WHO database 
 I wrote a script that would scrape data from a website using POST requests and I cleaned the data. My data helped to create one of the largest coherent ambient air quality datasets in Africa, which has been/ is being used in a number of environmental health studies. This work resulted in an acknowledgement in the World Health Organisation (WHO) ambient air quality database, 2022 update - Status report.
