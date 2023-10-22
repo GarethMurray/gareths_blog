@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .mytainer {
-  @apply container mx-auto max-w-[65ch] px-4 md:px-0;
+  @apply container mx-auto max-w-[65ch] lg:max-w-[75ch] xl:max-w-[95ch] px-4 md:px-0;
 }
 
 pre[class*='language-'] {
@@ -11,5 +11,5 @@ pre[class*='language-'] {
 }
 
 h1 {
-  @apply !mb-1;
+  @apply !mb-1 lg:text-xl xl:text-xl 2xl:text-xl;
 }
