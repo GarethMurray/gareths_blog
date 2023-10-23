@@ -3,6 +3,10 @@ title: Problem solving tools
 date: 2023-10-22 23:53
 excerpt: Problem solving tools that I have made
 ---
+<script>
+    import { Lightbox } from 'svelte-lightbox'
+</script>
+
 ## Datasheet populator
 <div class="flex flex-col no-gap -gap-1">
 <span class='text-g'>PROBLEM:</span> I had 16 control valve datasheets that had to be populated. Every time there would be a small change, all datasheets would had to be updated. This took some time as I had to wait for each datasheet to open, I'd have to navigate to the correct cell and make the same change. This manual action also introduces the possibility of making mistakes.
