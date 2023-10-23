@@ -45,8 +45,10 @@ A repository for all cleaned SAAQIS data to benefit other researchers can be acc
 [Github: SAAQIS_Environmental_Data](https://github.com/GarethMurray/SAAQIS_Environmental_Data)
 
 I created an interactive Plotly plot of the average PM2.5 measured at all stations, highlighting any stations that are non-compliant with the annual South African National Ambient Air Quality standards:
-<div class="lg:-mx-20">
+<div class="relative flex justify-center">
+<div class="lg:min-w-[1008px] max-w-[1008px]">
     <iframe src="SA - Average PM2.5 (compliance)_2022.05.05.html" width="100%" height="500px" frameborder="0" />
+</div>
 </div>
 
 ### OFC_visualisation (Public)
