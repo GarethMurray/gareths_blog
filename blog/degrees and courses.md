@@ -1,7 +1,7 @@
 ---
-title: Degrees and courses
+title: Qualifications
 date: 2023-10-22 23:58
-excerpt: My academic career
+excerpt: My academic career and lifelong learning
 ---
 ## Degrees
 I have a Bachelor's degree and a Master's degree:
@@ -13,10 +13,15 @@ I chose the M.Eng Engineering Management as I wanted to focus a bit more on proj
 ## Courses
 I have completed the following courses:
 
-[Python for Data Science and Machine Learning Bootcamp](https://www.udemy.com/course-dashboard-redirect/?course_id=903744)<br>
-[The Complete SQL Bootcamp: Go from Zero to Hero](https://www.udemy.com/course-dashboard-redirect/?course_id=762616)<br>
-[Automate the Boring Stuff with Python Programming](https://www.udemy.com/course-dashboard-redirect/?course_id=543600)<br>
-<br>
+<div class="flex flex-col no-gap gap-1">
+
+[Python for Data Science and Machine Learning Bootcamp](https://www.udemy.com/course-dashboard-redirect/?course_id=903744)
+
+[The Complete SQL Bootcamp: Go from Zero to Hero](https://www.udemy.com/course-dashboard-redirect/?course_id=762616)
+
+[Automate the Boring Stuff with Python Programming](https://www.udemy.com/course-dashboard-redirect/?course_id=543600)
+</div>
+
 I am busy with the following courses:
 
 [Statistics for Business Analytics and Data Science A-Z™](https://www.udemy.com/course/data-statistics/)<br>
