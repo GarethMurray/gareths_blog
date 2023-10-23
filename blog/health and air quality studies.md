@@ -3,6 +3,10 @@ title: Health and Air Quality Studies
 date: 2023-10-22 23:55
 excerpt: An Insight into Data-Driven Research Studies
 ---
+<script>
+    import { Lightbox } from 'svelte-lightbox'
+</script>
+
 ## Health and Air Quality Studies 
 
 ### PhD-2022 (Private)
@@ -22,21 +26,28 @@ excerpt: An Insight into Data-Driven Research Studies
 <span class='text-g'>SOLUTION:</span> I used POST requests to download all SAAQIS data and performed extensive data cleaning and analysis. There were 146 stations, and every station needed to have it's own body for the POST request. I consulted with full-stack developers and we found that the POST requests for the site were very inefficient, with payloads of more than 12,000 characters, but this was still the simplest solution. I cleaned the data (e.g. 05 Jan 2022 00:00 was registered as 04 Jan 2022 24:00), performed some analysis (mean, std_dev, count, missingno plot) and made sure there was no data that was not downloaded due to too many requests, faulty network etc.
 <br>
 <span class='text-g'>RESULT:</span> This data was used in a published article, discussed in "Accomplishments in Data Science". As illustrated below, I employed a variety of visualisations to scrutinise the data:
-<a href="AQ_msno_plot.png" target="_blank"> 
+
+
+<Lightbox transitionDuration={150}>
     <img src="AQ_msno_plot.png">
-</a>
+</Lightbox>
+
+
 <br>
 
-<a href="AQ_post_tracking.png" target="_blank"> 
+<Lightbox transitionDuration={150}>
     <img src="AQ_post_tracking.png">
-</a>
+</Lightbox>
+
 <br>
 A repository for all cleaned SAAQIS data to benefit other researchers can be accessed here:
 
 [Github: SAAQIS_Environmental_Data](https://github.com/GarethMurray/SAAQIS_Environmental_Data)
 
 I created an interactive Plotly plot of the average PM2.5 measured at all stations, highlighting any stations that are non-compliant with the annual South African National Ambient Air Quality standards:
-<iframe src="SA - Average PM2.5 (compliance)_2022.05.05.html" width="100%" height="500px" frameborder="0" class="lg:-mx-8"></iframe>
+<div class="lg:-mx-20">
+    <iframe src="SA - Average PM2.5 (compliance)_2022.05.05.html" width="100%" height="500px" frameborder="0" />
+</div>
 
 ### OFC_visualisation (Public)
 The static geo-spatial plots used in reports from the abovementioned study can be found here:
@@ -45,6 +56,6 @@ The static geo-spatial plots used in reports from the abovementioned study can b
 
 ### IndoorVsAmbient (Private)
 A study which compared measured indoor PM2.5 data to outdoor PM2.5 data. An example of some of the data can be seen below.
-<a href="output.png" target="_blank"> 
+<Lightbox transitionDuration={150}>
     <img src="output.png">
-</a>
+</Lightbox>
