@@ -10,16 +10,16 @@ excerpt: An Insight into Data-Driven Research Studies
 ## Health and Air Quality Studies 
 
 ### PhD-2022 (Private)
-<div class="flex gap-1 flex-col">
-<span class='text-g mt-1'>PROBLEM:</span> A dataset collected from low-income communities on human health had inconsistent response formats.
-<span class='text-g mt-1'>GOAL:</span> Clean, standardise and analsze the data to find correlations between air quality measures and human health conditions.
-<span class='text-g mt-1'>SOLUTION:</span> Data cleaning, data engineering and data analysis of the data was done.  Various data engineering techniques were applied, from cleaning to introducing dummy columns. Statistical and machine learning methods were explored, but unfortunately, the results were not promising. The dataset was heavily skewed, simply due to the parameters monitored, e.g. 1 in 100 people had asthma, it was difficult to statistically prove that there was a common feature (confounder) between the people that tested positive, such as using a coal stove within their dwelling. 
-<span class='text-g mt-1'>RESULT:</span> The dataset was used for several studies, including my partner's PhD.
+<div class="flex flex-col no-gap -gap-1">
+<span class='text-g'>PROBLEM: </span><span class='mt-0'>A dataset collected from low-income communities on human health had inconsistent response formats.</span>
+<span class='text-g'>GOAL:</span> Clean, standardise and analsze the data to find correlations between air quality measures and human health conditions.
+<span class='text-g mt-2'>SOLUTION:</span> Data cleaning, data engineering and data analysis of the data was done.  Various data engineering techniques were applied, from cleaning to introducing dummy columns. Statistical and machine learning methods were explored, but unfortunately, the results were not promising. The dataset was heavily skewed, simply due to the parameters monitored, e.g. 1 in 100 people had asthma, it was difficult to statistically prove that there was a common feature (confounder) between the people that tested positive, such as using a coal stove within their dwelling. 
+<span class='text-g mt-2'>RESULT:</span> The dataset was used for several studies, including my partner's PhD.
 </div>
 
 ### OFC_study_2021 (Orofacial Cleft Palette) (Private)
 
-<div class="flex gap-1 flex-col">
+<div class="flex gap-1 flex-col no-gap gap-1">
 <span class='text-g mt-1'>PROBLEM:</span> Data from 146 different stations was required. This was made difficult as the website only allowed a user to download one day. This was one of my first projects, and I could not get Selenium to work. Originally I wrote a script to click on each button based on its location on the screen. I discussed this with my friends and they taught me about POST requests, which ended up being much easier. 
 
 <span class='text-g mt-1'>GOAL:</span> Download all 146 stations for the past 15 years. Place all data from a single station within a single spreadsheet.
