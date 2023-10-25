@@ -2,11 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-.mytainer {
-  @apply container mx-auto max-w-[65ch] px-4 md:px-0 lg:max-w-[90ch] xl:max-w-[115ch];
+.container {
+  @apply mx-auto max-w-3xl px-4 md:px-8 lg:px-16;
 }
 
-pre[class*='language-'] {
+.prose {
+  @apply prose-invert max-w-[unset];
+}
+
+pre[class*="language-"] {
   @apply !my-4 rounded-xl !bg-dark-900 bg-opacity-80 p-4 !text-xs shadow shadow-dark-600 md:!-mx-16 md:my-8 md:!p-8 md:!text-sm;
 }
 
@@ -15,5 +19,9 @@ h1 {
 }
 
 .no-gap > * {
-  margin: 0 !important;
+  margin: 0;
+}
+
+.-mb-1 {
+  margin-bottom: -0.5rem !important;
 }

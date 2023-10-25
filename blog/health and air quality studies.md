@@ -10,23 +10,32 @@ excerpt: An Insight into Data-Driven Research Studies
 ## Health and Air Quality Studies 
 
 ### PhD-2022 (Private)
-<div class="flex flex-col no-gap -gap-1">
-<span class='text-g'>PROBLEM: </span><span class='mt-0'>A dataset collected from low-income communities on human health had inconsistent response formats.</span>
-<span class='text-g'>GOAL:</span> Clean, standardise and analsze the data to find correlations between air quality measures and human health conditions.
-<span class='text-g mt-2'>SOLUTION:</span> Data cleaning, data engineering and data analysis of the data was done.  Various data engineering techniques were applied, from cleaning to introducing dummy columns. Statistical and machine learning methods were explored, but unfortunately, the results were not promising. The dataset was heavily skewed, simply due to the parameters monitored, e.g. 1 in 100 people had asthma, it was difficult to statistically prove that there was a common feature (confounder) between the people that tested positive, such as using a coal stove within their dwelling. 
-<span class='text-g mt-2'>RESULT:</span> The dataset was used for several studies, including my partner's PhD.
+<div class="flex flex-col no-gap gap-2">
+
+<div class='text-g -mb-1 pt-2'>PROBLEM: </div>
+<p>A dataset collected from low-income communities on human health had inconsistent response formats.</p>
+
+<div class='text-g -mb-1 pt-2'>GOAL:</div>
+<p>Clean, standardise and analsze the data to find correlations between air quality measures and human health conditions.</p>
+
+<div class='text-g -mb-1 pt-2'>SOLUTION:</div> 
+<p>Data cleaning, data engineering and data analysis of the data was done.  Various data engineering techniques were applied, from cleaning to introducing dummy columns. Statistical and machine learning methods were explored, but unfortunately, the results were not promising. The dataset was heavily skewed, simply due to the parameters monitored, e.g. 1 in 100 people had asthma, it was difficult to statistically prove that there was a common feature (confounder) between the people that tested positive, such as using a coal stove within their dwelling.</p>
+
+<div class='text-g -mb-1 pt-2'>RESULT:</div> 
+<p>The dataset was used for several studies, including my partner's PhD.</p>
+
 </div>
 
 ### OFC_study_2021 (Orofacial Cleft Palette) (Private)
 
-<div class="flex gap-1 flex-col no-gap gap-1">
-<span class='text-g mt-1'>PROBLEM:</span> Data from 146 different stations was required. This was made difficult as the website only allowed a user to download one day. This was one of my first projects, and I could not get Selenium to work. Originally I wrote a script to click on each button based on its location on the screen. I discussed this with my friends and they taught me about POST requests, which ended up being much easier. 
+<div class="flex flex-col no-gap gap-2">
+<div class='text-g -mb-1 pt-2'>PROBLEM:</div> Data from 146 different stations was required. This was made difficult as the website only allowed a user to download one day. This was one of my first projects, and I could not get Selenium to work. Originally I wrote a script to click on each button based on its location on the screen. I discussed this with my friends and they taught me about POST requests, which ended up being much easier. 
 
-<span class='text-g mt-1'>GOAL:</span> Download all 146 stations for the past 15 years. Place all data from a single station within a single spreadsheet.
+<div class='text-g -mb-1 pt-2'>GOAL:</div> Download all 146 stations for the past 15 years. Place all data from a single station within a single spreadsheet.
 
-<span class='text-g mt-1'>SOLUTION:</span> I used POST requests to download all SAAQIS data and performed extensive data cleaning and analysis. There were 146 stations, and every station needed to have it's own body for the POST request. I consulted with full-stack developers and we found that the POST requests for the site were very inefficient, with payloads of more than 12,000 characters, but this was still the simplest solution. I cleaned the data (e.g. 05 Jan 2022 00:00 was registered as 04 Jan 2022 24:00), performed some analysis (mean, std_dev, count, missingno plot) and made sure there was no data that was not downloaded due to too many requests, faulty network etc.
+<div class='text-g -mb-1 pt-2'>SOLUTION:</div> I used POST requests to download all SAAQIS data and performed extensive data cleaning and analysis. There were 146 stations, and every station needed to have it's own body for the POST request. I consulted with full-stack developers and we found that the POST requests for the site were very inefficient, with payloads of more than 12,000 characters, but this was still the simplest solution. I cleaned the data (e.g. 05 Jan 2022 00:00 was registered as 04 Jan 2022 24:00), performed some analysis (mean, std_dev, count, missingno plot) and made sure there was no data that was not downloaded due to too many requests, faulty network etc.
 
-<span class='text-g mt-1'>RESULT:</span> This data was used in a published article, discussed in "Accomplishments in Data Science". As illustrated below, I employed a variety of visualisations to scrutinise the data:
+<div class='text-g -mb-1 pt-2'>RESULT:</div> This data was used in a published article, discussed in "Accomplishments in Data Science". As illustrated below, I employed a variety of visualisations to scrutinise the data:
 </div>
 
 <Lightbox transitionDuration={150}>

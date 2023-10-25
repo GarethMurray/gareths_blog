@@ -11,7 +11,7 @@
 <div class="flex flex-col min-h-screen">
 	<Header />
 
-  <main class="md:pt-2 pb-4 pt-4 mytainer">
+  <main class="md:pt-2 pb-4 pt-4 container">
 		<PageTransition url={data.url}>
 			<slot />
 		</PageTransition>

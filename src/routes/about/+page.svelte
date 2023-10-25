@@ -1,4 +1,4 @@
-<div class="prose prose-invert">
+<div class="prose">
 
 <h2>My background in programming and Machine Learning</h2>
 <p>I have enjoyed programming since I was very young around 13 years old. I started learning Delphi at High School, then C++ and Matlab at University. While I was working, I developed my Excel skills significantly and I learnt VBA in Excel. In 2019, I started teaching myself Python. I really enjoyed automating processes and I started writing scripts to make my monotonous work less effort.</p>
